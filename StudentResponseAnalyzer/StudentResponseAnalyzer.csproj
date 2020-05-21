@@ -10,9 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="credentials.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="Survey.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
