@@ -106,7 +106,7 @@ namespace StudentResponseAnalyzer
             AnalysisData.NetworkType.None =
                 students.Where(x => x.Answers.InternetServices.Contains(InternetService.None)).Count();
             AnalysisData.NetworkType.HasNetwork =
-                students.Where(x => x.Answers.InternetServices.Count > 0).Count();
+                students.Where(x => x.Answers.InternetServices.Count > 0 && !x.Answers.InternetServices.Contains(InternetService.None)).Count();
 
 
             AnalysisData.NetworkCondition.Yes =

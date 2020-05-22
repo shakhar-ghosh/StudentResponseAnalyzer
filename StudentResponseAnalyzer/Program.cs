@@ -226,7 +226,7 @@ namespace StudentResponseAnalyzer
 
             printSeparator();
 
-            Console.WriteLine("Has sufficient Network in residence?");
+            Console.WriteLine("Has Network coverage in residence?");
 
             Console.WriteLine("Yes: " + analyzer.AnalysisData.NetworkCondition.Yes);
             Console.WriteLine("No: " + analyzer.AnalysisData.NetworkCondition.No);
@@ -249,16 +249,14 @@ namespace StudentResponseAnalyzer
             Console.WriteLine("Yes: " + analyzer.AnalysisData.ITFacility.Yes);
             Console.WriteLine("No: " + analyzer.AnalysisData.ITFacility.No);
 
-            Console.WriteLine("Sub classes of student who has answered \"No\"");
-            Console.WriteLine("Lives in Division: " + analyzer.AnalysisData.ITFacility.NoFromDivision);
-            Console.WriteLine("Lives in District: " + analyzer.AnalysisData.ITFacility.NoFromDistrict);
-            Console.WriteLine("Lives in Upazila: " + analyzer.AnalysisData.ITFacility.NoFromUpazila);
-            Console.WriteLine("Lives in Union/Village: " + analyzer.AnalysisData.ITFacility.NoFromUnion);
-
-
-            Console.WriteLine("\n\nHas Average internet connection: " + analyzer.AnalysisData.ITFacility.NoWithAverageConnection);
-            Console.WriteLine("Has Good internet connection: " + analyzer.AnalysisData.ITFacility.NoWithGoodConnection);
-            Console.WriteLine("Has Excellent internet connection: " + analyzer.AnalysisData.ITFacility.NoWithExcellentConnection);
+            Console.WriteLine("\nSub classes of student who has answered \"No\"");
+            Console.WriteLine("Answered No, Lives in Division: " + analyzer.AnalysisData.ITFacility.NoFromDivision);
+            Console.WriteLine("Answered No, Lives in District: " + analyzer.AnalysisData.ITFacility.NoFromDistrict);
+            Console.WriteLine("Answered No, Lives in Upazila: " + analyzer.AnalysisData.ITFacility.NoFromUpazila);
+            Console.WriteLine("Answered No, Lives in Union/Village: " + analyzer.AnalysisData.ITFacility.NoFromUnion);
+            Console.WriteLine("Answered No, Has Average internet connection: " + analyzer.AnalysisData.ITFacility.NoWithAverageConnection);
+            Console.WriteLine("Answered No, Has Good internet connection: " + analyzer.AnalysisData.ITFacility.NoWithGoodConnection);
+            Console.WriteLine("Answered No, Has Excellent internet connection: " + analyzer.AnalysisData.ITFacility.NoWithExcellentConnection);
 
             printSeparator();
         }
